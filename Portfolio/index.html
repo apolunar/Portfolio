@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinerCat36 | Portfolio</title>
+    <link rel="stylesheet" href="/Portfolio/styles.css">
+    <link rel="icon" href="/Assets/CatIcon.svg">
+</head>
+
+<body>
+    <nav class="navigation" id="top">
+        <h1 class="nav-title"><a href="#top">MinerCat36</a></h1>
+
+        <ul class="nav-list">
+            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#project-gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+
+        <img src="/Assets/InkScapemenuicon.svg" alt="Menu Icon" onclick="openNav()" class="menu-btn">
+
+
+        <div id="Sidenav" class="sidenav">
+
+            <div class="nav-title">        
+                <h1>MinerCat36</h1>
+            </div>
+
+            <div class="breaker-underline"></div>
+    
+            <img src="/Assets/InkScapecloseicon.svg" alt="Menu Icon" onclick="closeNav()" class="closebtn">
+    
+            <a href="#top" class="active" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#background" onclick="closeNav()">Bakground</a>
+    
+            <div class="breaker-underline"></div>
+    
+            <a href="#project-gallery" onclick="closeNav()">Gallery</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <div class="photo-header" id="home">
+        <div class="text-cont">
+            <h1 class="photo-title">MinerCat36</h1>
+            <h1 class="photo-what">Student. Developer. Maker.</h1>
+        </div>
+    </div>
+
+    <div class="section" id="about">
+        <h1 class="about-title" id="section-title">About</h1>
+        <div class="inline-about" id="section-inline">
+            <p class="about-text" id="section-text">
+                My passion has always been tech, I loved doing things like pressing Ctrl-Shift-I and messing with the elements, finding absolutely every shortcut and combing through settings on computers. Also, whenever I had the chance I tried to help pepole with their tech issues.<br><br>
+                I have always been the kind of person who loves to mess around with things like EV3s, M-Bots, and Scratch. But I really got into software development in 6th-grade at Maker Club when the 8th-grade Integrated Math teacher who had been a huge mentor to me helped me to code a bit of Python. After a few more Maker Clubs my love for coding python skyrocketed, I used Stack Overflow, Google and Youtube to learn more and more Python and eventually other languages like C# and Javascript. <br><br>
+                Some of my other passions include photography, writing, making, and performing music. I have always had an undying passion to take on any challenge no matter how difficult. I also enjoy messing around with electronics having fun with Rasberry Pis, Microbits, and Little Bits.  
+            </p>
+            <div class="imgs">
+                <img src="/Assets/makingimg-rsz.png" alt="Circuit" class="about-image">
+                <img src="/Assets/robotimg-rsz.png" alt="Circuit" class="about-image">
+                <img src="/Assets/makingimg2-rsz.png" alt="Circuit" class="about-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="background">
+        <h1 class="background-title" id="section-title">Background</h1>
+        <div class="background" id="section-inline">
+            <p class="background-text" id="section-text">
+                My passion has always been tech, I loved doing things like pressing Ctrl-Shift-I and messing with the elements, finding absolutely every shortcut and combing through settings on computers. Also, whenever I had the chance I tried to help pepole with their tech issues.<br><br>
+                I have always been the kind of person who loves to mess around with things like EV3s, M-Bots, and Scratch. But I really got into software development in 6th-grade at Maker Club when the 8th-grade Integrated Math teacher who had been a huge mentor to me helped me to code a bit of Python. After a few more Maker Clubs my love for coding python skyrocketed, I used Stack Overflow, Google and Youtube to learn more and more Python and eventually other languages like C# and Javascript. <br><br>
+                Some of my other passions include photography, writing, making, and performing music. I have always had an undying passion to take on any challenge no matter how difficult. I also enjoy messing around with electronics having fun with Rasberry Pis, Microbits, and Little Bits.  
+            </p>
+            <div class="skill-graph">
+
+                <h1 class="graph-title">Python</h1>
+
+                <div class="chart">
+                    <svg viewBox="0 0 36 36" class="chart-svg blue">
+                        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="line" stroke-dasharray="76, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="21.35" class="percentage">76%</text>
+                    </svg>
+                </div>
+
+                <h1 class="graph-title">C#</h1>
+    
+                <div class="chart">
+                    <svg viewBox="0 0 36 36" class="chart-svg red">
+                        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="line" stroke-dasharray="48, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="21.35" class="percentage">48%</text>
+                    </svg>
+                </div>
+
+                <h1 class="graph-title">Javascript</h1>
+    
+                <div class="chart">
+                    <svg viewBox="0 0 36 36" class="chart-svg green">
+                        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="line" stroke-dasharray="28, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="21.35" class="percentage">28%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-gallery" id="project-gallery">
+        <h1 id="section-title" class="long">Project Gallery</h1>
+
+        <div class="projects">
+            <div class="inline">
+                <img src="/Assets/InkScapeleftarrow.svg" alt="Go Left" class="arrow left" onclick="changeSlide(-1)">
+
+
+                <div class="project slide1">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">CSV Images</h1>
+                    <p class="project-sample">For ML to easily interpret data images need to be in CSV format, that is what this program does.</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">JS, HTML, CSS</h4>
+                        <h4 class="date">April, 5, 2020</h4>
+                    </div>
+                </div>
+
+                <div class="project slide1" id="hide2">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Modulo Tools</h1>
+                    <p class="project-sample">Modulo is a place where I can make tools for the whole world to use in my free time, and that seems super powerful!</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">JS, HTML, CSS</h4>
+                        <h4 class="date">March, 1, 2022</h4>
+                    </div>
+                </div>
+
+                <div class="project slide1" id="hide">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Portfolio</h1>
+                    <p class="project-sample">A portfolio is a place to show what one has spent their time on in their career. This is especially important for a software developer because of the amount of projects you can do in a very short time period.</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">JS, HTML, CSS</h4>
+                        <h4 class="date">March, 22, 2020</h4>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+
+                <div class="project slide2">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Piano Tiles</h1>
+                    <p class="project-sample">I used pyautogui to automaticallt click piano tiles :)</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">Feb, 8, 2021</h4>
+                    </div>
+                </div>
+
+                <div class="project slide2" id="hide2">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">ML</h1>
+                    <p class="project-sample">I read the entire crash course it was quite amazing</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">April, 2, 2021</h4>
+                    </div>
+                </div>
+
+                <div class="project slide2" id="hide">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Unity</h1>
+                    <p class="project-sample">Finnaly my first game</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">C#</h4>
+                        <h4 class="date">June, 12, 2020</h4>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+
+                <div class="project slide3">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Turtle Image</h1>
+                    <p class="project-sample">I used the python module turtle to automattically draw an imported image. This is how I did CSV convert.</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">Dec, 7, 2021</h4>
+                    </div>
+                </div>
+
+                <div class="project slide3" id="hide2">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Splendor ML</h1>
+                    <p class="project-sample">I created an AI for the game splendor!</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">June, 12, 2021</h4>
+                    </div>
+                </div>
+
+                <div class="project slide3" id="hide">
+                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Math Command</h1>
+                    <p class="project-sample">I made an educational game with unity. Check it out on the app store!</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">C#</h4>
+                        <h4 class="date">Aug, 16, 2024</h4>
+                    </div>
+                </div>
+
+                <!-- <div class="project button hidden"></div> -->
+
+                <img src="/Assets/InkScaperightarrow.svg" alt="Go Right" class="arrow right" onclick="changeSlide(1)">
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="showSlide(1)"></span> 
+                <span class="dot" onclick="showSlide(2)"></span> 
+                <span class="dot" onclick="showSlide(3)"></span> 
+            </div>
+        </div>
+
+        <a href="/ProjectSelector/index.html"><h1 class="btn">See All</h1></a>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 id="section-title" class="contact-title">Contact</h1>
+
+        <form class="contact-form" action="/action_page.php">
+            <div class="inline-form">
+                <input id="name" class="textarea" placeholder="Full Name">
+                <span class="underline"></span>
+            
+                <input id="email" class="textarea" placeholder="Email">
+                <span class="underline"></span>
+            </div>
+
+            <input id="subject" class="textarea" placeholder="Subject of email">
+            <span class="underline"></span>
+
+            <textarea id="message" class="textarea" placeholder="Write your message here" style="height:200px"></textarea>
+
+            <a onclick="generateLink()">                   
+                <h1 class="btn" id="send-btn">
+                    Send!
+                </h1>
+            </a>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <h1>©MinerCat36 • All Rights Reserved</h1>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="/Portfolio/slides.js"></script>
+    <!-- <script src="/gallery.js"></script> -->
+
+    <script>
+        function generateLink() {
+            var subject = $("#subject").val(),
+            message = $("#message").val() + "\n\nFrom: " + $("#name").val() + " • " + $("#email").val()
+            
+
+            message = message.replace(/\r/gm,"%0D")
+            message = message.replace(/\n/gm,"%0A")
+
+            window.open('mailto:minercat36@gmail.com?subject=' + subject + "&body=" + message, '_blank');
+            console.log('subject=' + subject + "\nmessage=" + message)
+        }
+
+        function openNav() {
+            document.getElementById("Sidenav").style.width = "250px"
+        }
+        function closeNav() {
+            document.getElementById("Sidenav").style.width = "0"
+        }
+
+        function clearTop() {
+            for (i = 0; i < sideNavLinks.length; i++) {
+                    sideNavLinks[i].className = ""
+                    topNavLinks[i].className = ""
+            }
+        }
+
+        var sideNavLinks = document.querySelectorAll(".sidenav a")
+        var topNavLinks = document.querySelectorAll(".nav-list a")
+        var windowHeight = $(window).height()
+
+        $(window).scroll(function() {
+            var userScrollPos = $(this).scrollTop()
+            var HomeHeight = $('#home').offset().top
+            var AboutHeight = $('#about').offset().top
+            var BackgroundHeight = $('#background').offset().top
+            var GalleryHeight = $('#project-gallery').offset().top
+            var ContactHeight = $('#contact').offset().top
+
+            // console.log(userScrollPos > (BackgroundHeight - windowHeight))
+
+            if (userScrollPos < HomeHeight){
+                clearTop()
+                sideNavLinks[0].className = "active"
+                topNavLinks[0].className = "active"
+            }
+            if (userScrollPos > (AboutHeight - windowHeight)){
+                clearTop()
+                sideNavLinks[1].className = "active"
+                topNavLinks[1].className = "active"
+            }
+            if (userScrollPos > (BackgroundHeight - windowHeight)){
+                clearTop()
+                sideNavLinks[2].className = "active"
+                topNavLinks[2].className = "active"
+            }
+            if (userScrollPos > (GalleryHeight - windowHeight)){
+                clearTop()
+                sideNavLinks[3].className = "active"
+                topNavLinks[3].className = "active"
+            }
+            if (userScrollPos > (ContactHeight - windowHeight)){
+                clearTop()
+                sideNavLinks[4].className = "active"
+                topNavLinks[4].className = "active"
+            }
+        });
+
+        // $("#send-btn").click(() => {
+
+        //     var emailData = {
+        //         name: $("#name").val(),
+        //         email: $("#email").val(),
+        //         subject: $("#subject").val(),
+        //         message: $("#message").val()
+        //     }; // Object to store data
+
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "/Portfolio/sendEmail.php",
+        //         data: emailData,
+        //         success: function() {alert("Message Sent")},
+        //         error: function() {alert("Error")},
+        //         dataType: "json"
+        //     });
+        // });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:300,600,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292c34;
+    color: #fff;
+
+    font-family: 'Oxanium', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    position: sticky;
+    top: 0;
+    padding: 13px;
+    z-index: 99;
+
+    background-color: rgba(73, 73, 73, 0.9);
+    transition: all 0.3s ease;
+    box-shadow: rgba(73, 73, 73, 0.1) 0px 3px;
+}
+
+.navigation .nav-title {
+    position: relative;
+    display: inline-flex;
+    top: 2px;
+}
+
+
+.navigation .nav-title a {
+    font-size: 30px;
+    background: -webkit-linear-gradient(left, rgb(255, 80, 80), rgb(255, 102, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TITLE */
+
+.project-gallery {
+    text-align: center;
+}
+
+.title {
+    background: -webkit-linear-gradient(left, rgb(255, 80, 80), rgb(255, 120, 120));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    border-bottom: 2px solid white;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* ------------------------- */
+
+/* PROJECTS */
+
+.project-gallery .projects .project {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+
+    background-color: white;
+    border: 5px solid #ff5e5e;
+    border-radius: 5px;
+
+    width: 400px;
+    height: 540px;
+
+    color: #292c34;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-gallery .projects .project.hidden {
+    display: none;
+}
+
+.project-gallery .projects .project:hover {
+    transform: translate(-2px, -5px);
+    cursor: pointer;
+    box-shadow: rgb(77, 77, 77, 0.9) 10px 10px;
+    opacity: 0.8;
+}
+
+/* ------------------------- */
+
+/* SEARCH */
+
+.search-box {
+    margin: 30px;
+    text-align: center;
+}
+
+.search-box .search-input {
+    margin: 10px;
+    font-family: 'Oxanium', sans-serif;
+    padding: 15px;
+    width: 500px;
+    border: 2px solid rgb(255, 102, 102);
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box .search-input:focus {
+    border: 2px solid dodgerblue;
+    transform: scale(1.04);
+}
+
+.search-box .search-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    padding: 6px;
+    cursor: pointer;
+    background: rgba(73, 73, 73, 0.1);
+    transition: 0.3s all cubic-bezier(1, 1, 1, 1);
+}
+
+.search-box .search-img:hover {
+    background: rgba(73, 73, 73, 0.9);
+}
+
+
+/* INSIDE PROJECT CARD */
+
+.project-gallery .projects .project .project-thumbnail {
+    max-width: 390px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.project-gallery .projects .project .project-title {
+    position: absolute;
+    width: 330px;
+
+    color: #ff5e5e;
+    border-bottom: 2px solid rgb(255, 150, 89);
+
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.project-gallery .projects .project .project-sample {
+    position: absolute;
+    padding: 5px 10px 0;
+    font-size: 20px;
+    width: 350px;
+    margin-left: 5px;
+    margin-top: 54px;
+}
+
+.project-gallery .projects .project .inline-info {
+    display: inline-flex;
+    position: relative;
+    top: 240px;
+    left: 30px;
+}
+
+.project-gallery .projects .project .inline-info .date {
+    position: absolute;
+    left: 150px;
+    font-weight: 300;
+    font-size: 24px;
+    width: 190px;
+    padding: 7px;
+    color: white;
+    background-color: #1d1d1d;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.project-gallery .projects .project .inline-info .languages {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ------------------------- */
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    background-color: #222222;
+    padding: 16px;
+}
+
+.footer h1 {
+    font-weight: 100;
+}
+
+/* ------------------------- */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 665px) {
+    .title {
+        width: 440px;
+        font-size: 70px;
+    }
+    .search-box .search-input {
+        width: 320px;
+    }
+    
+}
