@@ -262,7 +262,7 @@
 
             <textarea id="message" class="textarea" placeholder="Write your message here" style="height:200px"></textarea>
 
-            <a onclick="generateLink()">                   
+            <a onclick="generateLink(); openPopup()">                   
                 <h1 class="btn" id="send-btn">
                     Send!
                 </h1>
@@ -275,21 +275,43 @@
         <h1>©MinerCat36 • All Rights Reserved</h1>
     </footer>
 
+    <div class="overlay">
+        <div class="popup">
+            <img src="/Assets/InkScapecloseicon.svg" alt="Close" class="closebtn" onclick="closePopup()">
+            <h1 class="popup-title">Link Didn't Work?</h1>
+            <p class="popup-text">If the browser did not open up your preffered email service like it was supposed to using the <a href="https://css-tricks.com/all-about-mailto-links/#comments" style="color: greenyellow; border-bottom: 2px solid greenyellow;">MailTo</a> link provided in HTML, either:</p>
+            <ul class="options-list">
+                <li>Go to your preffered email service and copy paste your email into a new draft.</li>
+                <li>Search: "get mailto link to work for" + your desired browser and try pressing send again.</li>
+            </ul>
+            <h4 class="sorry">Sorry for the inconvience, I know mailto is not the best solution and I am trying to figure out how to set up an SMTP server or other to send emails :(</h4>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
     <script src="/Portfolio/slides.js"></script>
     <!-- <script src="/gallery.js"></script> -->
 
     <script>
+        var overlay = document.querySelector(".overlay")
+
+        function openPopup() {
+            overlay.style.display = "initial"
+            document.body.style.overflow = "hidden"
+        }
+
+        function closePopup() {
+            overlay.style.display = "none"
+            document.body.style.overflow = "initial"
+        }
+
         function generateLink() {
             var subject = $("#subject").val(),
             message = $("#message").val() + "\n\nFrom: " + $("#name").val() + " • " + $("#email").val()
             
-
-            message = message.replace(/\r/gm,"%0D")
-            message = message.replace(/\n/gm,"%0A")
+            message = message.replace(/(\r\n|\n|\r)/gm, "%0D%0A")
 
             window.open('mailto:minercat36@gmail.com?subject=' + subject + "&body=" + message, '_blank');
-            console.log('subject=' + subject + "\nmessage=" + message)
         }
 
         function openNav() {
