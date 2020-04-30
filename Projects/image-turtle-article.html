@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinerCat36 | Article</title>
+    <link rel="stylesheet" href="/Projects/styles.css">
+    <link rel="icon" href="/Assets/CatIcon.svg">
+</head>
+<body>
+    <nav class="navigation" id="top">
+        <h1 class="nav-title"><a href="/Portfolio/index.html">MinerCat36</a></h1>
+    </nav>
+
+    <div class="project-article">
+        <div class="article-header">
+            <h1 class="project-article-title">Drawing an Image With Turtle</h1>
+
+            <div class="inline-info">
+                <h4 class="date">Feb, 6, 2020</h4>
+                <h4 class="lang">Python</h4>
+            </div>
+        </div>
+
+        <div class="project-article-summary">
+            <h4 class="top"><b>Goal:</b> Create a Python program that accepts an image and then uses the module turtle to draw it.</h4>
+            <h4><b>Main Challange:</b> Importing and parsing each pixel of the image.</h4>
+            <h4><b>Main Learnings:</b> A lot about the PIL library</h4>
+            <h4><b>Modules Used:</b> Turtle, PIL (Python Image Library)</h4>
+        </div>
+       
+        <p class="project-text">
+            <span>Sometimes I come up with the silliest project ideas. But here it is, a program that takes in an image, parses it and draws it in the Python module Turtle. I started pursuing this because one of my programming mentors has a class, in which he teaches Python to 8th graders and one of their programming assignments is to take an image and draw it in Turtle. Each one of these programs is very unique with many different functions and loops to make the code as short as possible. This made me think, wouldn’t it be great if you could import an image and Python would draw it for you, no work necessary. So that’s what I set out to do.</span><br>
+            <span>There were a few challenges in getting this to work, the biggest one being getting Python to be able to read each RGB value of each pixel in the image. After some research, I came across PIL (Python Image Library) which allowed you to specify the path of an image and get the pixel values of that image and a lot of other info regarding the picture. Once I had the pixel values in an array it was as simple as a for loop drawing each pixel and moving the turtle forward. This ran relatively smoothly except when the turtle was supposed to draw the next line of the image and it didn’t. This was an easy fix because I was able to use PIL to find the width and height of the image so I could tell the turtle when to turn onto the next row of the image.</span><br>
+            <span>As I mentioned before, though this may seem like a silly project, this project built the foundation for converting a folder of images into CSV format and I really enjoyed making this. Though it seems ridiculous, sometimes silly projects start something even bigger and make coding just a bit more fun. </span><br>
+
+        </p>
+ 
+    </div>
+
+    <footer class="footer">
+        <h1>©MinerCat36 • All Rights Reserved</h1>
+    </footer>
+
+</body>
+</html>

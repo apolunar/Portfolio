@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinerCat36 | Article</title>
+    <link rel="stylesheet" href="/Projects/styles.css">
+    <link rel="icon" href="/Assets/CatIcon.svg">
+</head>
+<body>
+    <nav class="navigation" id="top">
+        <h1 class="nav-title"><a href="/Portfolio/index.html">MinerCat36</a></h1>
+    </nav>
+
+    <div class="project-article">
+        <div class="article-header">
+            <h1 class="project-article-title">Word Unscrambler</h1>
+
+            <div class="inline-info">
+                <h4 class="date">Nov, 30, 2019</h4>
+                <h4 class="lang">Python</h4>
+            </div>
+        </div>
+
+        <div class="project-article-summary">
+
+            <h4 class="top"><b>Goal:</b> Create a Python application that takes in scrambled letters and outputs possible words.</h4>
+            <h4><b>Main Challange:</b> Having the program return all possible words rather than just one.</h4>
+            <h4><b>Main Learnings:</b> More logical thinking for programming</h4>
+            <h4><b>Modules Used:</b> None</h4>
+        </div>
+       
+        <p class="project-text">
+            <span>Whenever I play the board game Scrabble and can't find a word to create with the tiles I am dealt, I get frustrated and wonder if there are any words that I could possibly create with my tiles. To remedy this I started creating a program using Python to find Scrabble words. 
+            <span>I sat at my computer with a blinking cursor for a while, not entirely sure what to do with no documentation on logic and my desire to not have to look at a tutorial so I could figure it out by myself. Eventually, I determined, the first thing I would need to do would be to load the words that the computer would use to find possible words the user’s input could be. But before that could happen, I would have to figure out how I was going to match the user’s scrambled input to words in the dictionary. Eventually, with some help, I did figure it out. I decided that sorting each word in the dictionary would be the way to go because a sorted version of the user’s input and the dictionary words should be able to match up.</span><br>
+            <span>So, at that point, I had loaded the words and iterated through them sorting every single one of them and putting them into a list. But that won't work; if all of the letters are sorted how do you know what the unsorted version of the word is? To fix this, I used a Python dictionary to store the value of the sorted letters that is the key to the unsorted word. After that, I asked for user input and used Python’s .get() function to look through the dictionary for the sorted letters to unscramble them. That worked beautifully and I was satisfied with the results until I entered the word ‘pots’ and the unscrambled word it returned was ‘tops’ and it was supposed to return, ‘stop’, ‘post’, and ‘spot’ also.</span><br>
+            <span>The problem was simple, my program would only return one possible unscrambled word and not all of them because the value of the sorted word would be overwritten every time. The solution was not so simple to figure out but simple to execute. To fix it, when iterating through the words I had to check if the current word was already a value of a key in the dictionary. If the dictionary did have that specific key (sorted word) then have the value of the key be a set containing all of the possible words instead of a single value. That worked amazing and I now had my program printing every single possible word that a user’s input could be. But there was a single final step to do. I converted the words I put into the dictionary to lowercase and the user’s input to lowercase because the case doesn’t matter when unscrambling.</span><br>
+            <span>All of this may sound complicated, and that’s because it is (at least to me). To summarize what I did was sort every word in the dictionary and convert it to lowercase, assign it to a key (which has a value) in a Python dictionary and assign the value to the non-sorted word or multiple non-sorted words. Then I took the user’s input, sorted it, converted it to lowercase and ran it through the .get() function of a Python dictionary to get the unscrambled word or words from the key which is the sorted, lowercase version of the dictionary word. Whew! I know the code is not yet suited for its original purpose; to get all Scrabble words from letters. Things like all 5, 4, 3, and 2 letter words. This was already an extremely difficult project and I do plan to make it more complex and able to get Scrabble words at a later date. With this project, I learned a lot about logic in computer science and I am super excited to learn more about algorithmic computer science.</span><br>
+        </p>
+ 
+    </div>
+
+    <footer class="footer">
+        <h1>©MinerCat36 • All Rights Reserved</h1>
+    </footer>
+
+</body>
+</html>

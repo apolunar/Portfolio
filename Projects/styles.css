@@ -15,6 +15,12 @@ body {
 
 a {
     text-decoration: none;
+    color: greenyellow;
+    border-bottom: 2px solid greenyellow;
+    transition: 0.3s all ease-in;
+}
+a:hover {
+    color: dodgerblue;
 }
 
 html {
@@ -45,6 +51,7 @@ html {
 .navigation .nav-title a {
     font-size: 3rem;
     color: rgb(255, 80, 80);
+    border-bottom: none;
 }
 
 /* ARTICLE */
@@ -145,6 +152,10 @@ html {
     padding: 30px;
     line-height: 60px;
     font-size: 3.5rem;
+}
+
+.project-article .project-text span {
+    margin-left: 60px;
 }
 
 /* FOOTER */

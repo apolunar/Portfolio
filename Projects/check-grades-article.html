@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinerCat36 | Article</title>
+    <link rel="stylesheet" href="/Projects/styles.css">
+    <link rel="icon" href="/Assets/CatIcon.svg">
+</head>
+<body>
+    <nav class="navigation" id="top">
+        <h1 class="nav-title"><a href="/Portfolio/index.html">MinerCat36</a></h1>
+    </nav>
+
+    <div class="project-article">
+        <div class="article-header">
+            <h1 class="project-article-title">Check Grades</h1>
+
+            <div class="inline-info">
+                <h4 class="date">Nov, 9, 2019</h4>
+                <h4 class="lang">Python</h4>
+            </div>
+        </div>
+
+        <div class="project-article-summary">
+            <h4 class="top"><b>Goal:</b> Create a program that scrapes the website my school uses to show students their grades and sends my grades and missing assignments to me in an email.</h4>
+            <h4><b>Main Challange:</b> Getting the validation for the website my school uses to show students their grades using the module requests.</h4>
+            <h4><b>Main Learnings:</b> I learned a lot about scraping websites and how to send an email with Python.</h4>
+            <h4><b>Modules Used:</b> requests, lxml, smtplib</h4>
+        </div>
+       
+        <p class="project-text">
+            <span>As the header of my portfolio says, I am still in school and still learning so I want to stay on top of my grades. I always find it annoying signing into my school’s web app that allows students to see their grades. I know, first world problem. Anyhow, I also find it annoying after logging in finding out that I have missing assignments that are sitting right in my backpack. </span><br>
+            <span>To fix this problem I enlisted the help of the web for some answers. There were a few things that needed to happen for everything to come together. The first being the login, I can’t get my grades if I don’t have access to the data. The second piece of the puzzle is reading the data, because after having access to the data you need to read it. Third, send an email from me to myself containing all of the required info (class, grade, missing assignments).</span><br>
+            <span>To figure out how to do this I started to research and I found a python module that satisfies the first requirement; login. This was done with the modules requests and lxml by finding the event token, view token, and viewstate token using xpath; which are required to login and plugging them into a payload dictionary. Using my provided username, password, and the event token, view token, and viewstate token I was able to successfully login and navigate to the grade book URL. From there I used lxml to find all of the course titles, grades, and missing assignments and passed the info to a sendemail function. The sendemail function uses smtplib to send the email which worked great!</span><br>
+            <span>But I wasn’t satisfied because the information passed to the sendemail function was sloppy and hard to read. So I took one step further recompiling the information using a for loop and HTML to make different pieces of info different colors and on separate lines. I also made an if statement that checked if there was more than one missing assignment and if so changed the missing assignment color to red. After that, the email looked beautiful and sent me valid information. </span><br>
+            <span>The one thing missing that I have to re-setup is a server to automatically send the email to me before I go to school and I plan on doing that later. This project was quite educational and extremely difficult. I truly am glad I put the time in because it did help me stay on top of my grades.</span><br>
+        </p>
+ 
+    </div>
+
+    <footer class="footer">
+        <h1>©MinerCat36 • All Rights Reserved</h1>
+    </footer>
+
+</body>
+</html>

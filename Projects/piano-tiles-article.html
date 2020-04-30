@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinerCat36 | Article</title>
+    <link rel="stylesheet" href="/Projects/styles.css">
+    <link rel="icon" href="/Assets/CatIcon.svg">
+</head>
+<body>
+    <nav class="navigation" id="top">
+        <h1 class="nav-title"><a href="/Portfolio/index.html">MinerCat36</a></h1>
+    </nav>
+
+    <div class="project-article">
+        <div class="article-header">
+            <h1 class="project-article-title">Piano Tile Bot</h1>
+
+            <div class="inline-info">
+                <h4 class="date">Sept, 30, 2019</h4>
+                <h4 class="lang">Python</h4>
+            </div>
+        </div>
+
+        <div class="project-article-summary">
+
+            <h4 class="top"><b>Goal:</b> Create a program that automatically sees and clicks piano tiles in the <a target="_blank" href="https://www.yiv.com/Piano-Tiles-2-Online">piano tile game</a> to get the highest score possible.</h4>
+            <h4><b>Main Challange:</b> Making PyAutoGUI find and click the piano tiles fast enough and speed up as the tiles speed up. Also a weird 32bit-64bit error :(</h4>
+            <h4><b>Main Learnings:</b> A lot about PyAutoGUI.</h4>
+            <h4><b>Modules Used:</b> PyAutoGUI</h4>
+        </div>
+       
+        <p class="project-text">
+            <span>I have always found breaking games fun. Because it is, it really and truly is. That is why this project was so rewarding because I broke piano tiles. If you don’t know what the game is, piano tiles let me explain. It is basically a game where black squares move down on a screen and you have to click them. When you click them, they make a sound that goes with a song.</span><br>
+            <span>To break this particular game I used the super-powerful python module PyAutoGUI. There are many, many things you can do with PyAutoGUI, I used the function that is able to ‘see’ what color a specific pixel on the screen is. Using this functionality, I constantly looped, checking the four spots where black tiles would show up. If one of the if statements evaluated to true that specific spot where PyAutoGUI saw the black pixel of the tiles would be clicked. The same goes for the other three spots a tile could show up. To account for the game speeding up I had an up factor variable that makes the mouse click just a bit higher every time. </span><br>
+            <span>This was a blast to create and I am pumped to find another game to make a bot for. </span><br>
+        </p>
+ 
+    </div>
+
+    <footer class="footer">
+        <h1>©MinerCat36 • All Rights Reserved</h1>
+    </footer>
+
+</body>
+</html>

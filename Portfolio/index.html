@@ -13,7 +13,7 @@
         <h1 class="nav-title"><a href="#top">MinerCat36</a></h1>
 
         <ul class="nav-list">
-            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#top" >Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#background">Background</a></li>
             <li><a href="#project-gallery">Gallery</a></li>
@@ -56,14 +56,12 @@
         <h1 class="about-title" id="section-title">About</h1>
         <div class="inline-about" id="section-inline">
             <p class="about-text" id="section-text">
-                My passion has always been tech, I loved doing things like pressing Ctrl-Shift-I and messing with the elements, finding absolutely every shortcut and combing through settings on computers. Also, whenever I had the chance I tried to help pepole with their tech issues.<br><br>
-                I have always been the kind of person who loves to mess around with things like EV3s, M-Bots, and Scratch. But I really got into software development in 6th-grade at Maker Club when the 8th-grade Integrated Math teacher who had been a huge mentor to me helped me to code a bit of Python. After a few more Maker Clubs my love for coding python skyrocketed, I used Stack Overflow, Google and Youtube to learn more and more Python and eventually other languages like C# and Javascript. <br><br>
-                Some of my other passions include photography, writing, making, and performing music. I have always had an undying passion to take on any challenge no matter how difficult. I also enjoy messing around with electronics having fun with Rasberry Pis, Microbits, and Little Bits.  
+                Hello, my name is MinerCat36 and I am a software developer among other things. I have always loved tech and got into coding in middle school, my first text-based language being python. I love learning, and because of this, I have other hobbies like photography, music (violin), scuba diving, and making. Mainly, I have always loved creating, anything from a model motor engine to a remote cat food dispenser. I always have a desire to take on a challenge no matter how difficult, and never stop learning :) 
             </p>
             <div class="imgs">
-                <img src="/Assets/makingimg-rsz.png" alt="Circuit" class="about-image">
-                <img src="/Assets/robotimg-rsz.png" alt="Circuit" class="about-image">
-                <img src="/Assets/makingimg2-rsz.png" alt="Circuit" class="about-image">
+                <img src="/Assets/makingimg-rsz.png" alt="Circuit" class="about-image" id="img1">
+                <img src="/Assets/robotimg-rsz.png" alt="Robot" class="about-image" id="img2">
+                <!-- <img src="/Assets/makingimg2-rsz.png" alt="Circuit" class="about-image" id="img3"> -->
             </div>
         </div>
     </div>
@@ -72,9 +70,7 @@
         <h1 class="background-title" id="section-title">Background</h1>
         <div class="background" id="section-inline">
             <p class="background-text" id="section-text">
-                My passion has always been tech, I loved doing things like pressing Ctrl-Shift-I and messing with the elements, finding absolutely every shortcut and combing through settings on computers. Also, whenever I had the chance I tried to help pepole with their tech issues.<br><br>
-                I have always been the kind of person who loves to mess around with things like EV3s, M-Bots, and Scratch. But I really got into software development in 6th-grade at Maker Club when the 8th-grade Integrated Math teacher who had been a huge mentor to me helped me to code a bit of Python. After a few more Maker Clubs my love for coding python skyrocketed, I used Stack Overflow, Google and Youtube to learn more and more Python and eventually other languages like C# and Javascript. <br><br>
-                Some of my other passions include photography, writing, making, and performing music. I have always had an undying passion to take on any challenge no matter how difficult. I also enjoy messing around with electronics having fun with Rasberry Pis, Microbits, and Little Bits.  
+                While learning my first language, Python in 6th grade I did many projects, none particularly good but it got me started. I continued learning throughout 6th grade and the summer, wading through the neverending amount of bugs and errors I got but eventually, I began to create interesting stuff. During this time Stack Overflow, Google and Youtube were my friends and in 7th grade, I began to learn other languages like C# for Unity and Javascript for web development. You can see all of my projects and growth in the Gallery. I have yet to see all of software development and this is just the tip of what is out there but I will always have an undying passion to keep learning, usually by messing around with stuff like Rasberry Pis, Microbits, and Little Bits but also by researching what I am curious about.
             </p>
             <div class="skill-graph">
 
@@ -119,35 +115,37 @@
                 <img src="/Assets/InkScapeleftarrow.svg" alt="Go Left" class="arrow left" onclick="changeSlide(-1)">
 
 
-                <div class="project slide1">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+                <div class="project slide1" onclick="location.href='/Projects/csv-image-article.html'">
+                    <img src="/Assets/thumbnail-toCSV.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
                     <h1 class="project-title">CSV Images</h1>
-                    <p class="project-sample">For ML to easily interpret data images need to be in CSV format, that is what this program does.</p>
+                    <p class="project-sample">For machine learning to easily interpret data images need to be in CSV format, that is what this program does. I wasn't able to acomplish this until I had learned more about images in python.</p>
     
                     <div class="inline-info">
-                        <h4 class="languages">JS, HTML, CSS</h4>
-                        <h4 class="date">April, 5, 2020</h4>
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">March, 21, 2020</h4>
                     </div>
                 </div>
 
-                <div class="project slide1" id="hide2">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+
+                <div class="project slide1" id="hide2" onclick="location.href='/Projects/modulo-tools-article.html'">
+                    <img src="/Assets/thumbnail-modulo.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
                     <h1 class="project-title">Modulo Tools</h1>
-                    <p class="project-sample">Modulo is a place where I can make tools for the whole world to use in my free time, and that seems super powerful!</p>
+                    <p class="project-sample">Modulo is a place where I can make tools for the whole world to use in my free time. That is super powerful, to be able to help the world with code! Each tool is a project itself so make sure to check those out as well.</p>
     
                     <div class="inline-info">
                         <h4 class="languages">JS, HTML, CSS</h4>
-                        <h4 class="date">March, 1, 2022</h4>
+                        <h4 class="date">Feb, 27, 2020</h4>
                     </div>
                 </div>
 
-                <div class="project slide1" id="hide">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+
+                <div class="project slide1" id="hide" onclick="location.href='/Projects/portfolio-article.html'">
+                    <img src="/Assets/thumbnail-portfolio.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
                     <h1 class="project-title">Portfolio</h1>
-                    <p class="project-sample">A portfolio is a place to show what one has spent their time on in their career. This is especially important for a software developer because of the amount of projects you can do in a very short time period.</p>
+                    <p class="project-sample">Creating a portfolio is especially important to show a bit about you. This is why I decided to create one, so others could know a bit about me and I could reflect on finished projects then post them for others to see.</p>
     
                     <div class="inline-info">
                         <h4 class="languages">JS, HTML, CSS</h4>
@@ -157,77 +155,81 @@
 
                 <!-- SLIDE 2 -->
 
-                <div class="project slide2">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+                <div class="project slide2" onclick="location.href='/Projects/piano-tiles-article.html'">
+                    <img src="/Assets/thumbnail-tiles.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
                     <h1 class="project-title">Piano Tiles</h1>
-                    <p class="project-sample">I used pyautogui to automaticallt click piano tiles :)</p>
+                    <p class="project-sample">Using pyautogui, I created a bot to find and click piano tiles. This was so satisfying to see work and I truly enjoyed creating this.</p>
     
                     <div class="inline-info">
                         <h4 class="languages">Python</h4>
-                        <h4 class="date">Feb, 8, 2021</h4>
+                        <h4 class="date">Sept, 30, 2019</h4>
                     </div>
                 </div>
 
-                <div class="project slide2" id="hide2">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+
+                <div class="project slide2" id="hide2" onclick="location.href='/Projects/modulo-timer-article.html'">
+                    <img src="/Assets/thumbnail-moduloTimer.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
-                    <h1 class="project-title">ML</h1>
-                    <p class="project-sample">I read the entire crash course it was quite amazing</p>
+                    <h1 class="project-title">Modulo Timer</h1>
+                    <p class="project-sample">Using the platform I had set up, Modulo (a diffrent project) I created a timer to learn some more Javascript. It was super challenging to put this together and I am not yet satisfied with it.</p>
+    
+                    <div class="inline-info">
+                        <h4 class="languages">JS, HTML, CSS</h4>
+                        <h4 class="date">Feb, 26, 2020</h4>
+                    </div>
+                </div>
+
+
+                <div class="project slide2" id="hide" onclick="location.href='/Projects/check-grades-article.html'">
+                    <img src="/Assets/thumbnail-sendGrades.PNG" alt="Project Thumbnail" class="project-thumbnail">
+    
+                    <h1 class="project-title">Check Grades</h1>
+                    <p class="project-sample">As the header of my portfolio says, I am still in school and still learning :):):) so I want to stay on top of my grades. I did this using Python and a few web scraping modules to send me an email every morning with my grades and missing assignments.</p>
     
                     <div class="inline-info">
                         <h4 class="languages">Python</h4>
-                        <h4 class="date">April, 2, 2021</h4>
-                    </div>
-                </div>
-
-                <div class="project slide2" id="hide">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
-    
-                    <h1 class="project-title">Unity</h1>
-                    <p class="project-sample">Finnaly my first game</p>
-    
-                    <div class="inline-info">
-                        <h4 class="languages">C#</h4>
-                        <h4 class="date">June, 12, 2020</h4>
+                        <h4 class="date">Nov, 9, 2019</h4>
                     </div>
                 </div>
 
                 <!-- SLIDE 3 -->
 
-                <div class="project slide3">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+                <div class="project slide3" onclick="location.href='/Projects/image-turtle-article.html'">
+                    <img src="/Assets/thumbnail-turtleIMG.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
                     <h1 class="project-title">Turtle Image</h1>
-                    <p class="project-sample">I used the python module turtle to automattically draw an imported image. This is how I did CSV convert.</p>
+                    <p class="project-sample">I created this using the module turtle to automattically draw an imported image. Though this may seem like a pretty boring and useless project it gave me the founation to convert images to CSV for machine learning.</p>
     
                     <div class="inline-info">
                         <h4 class="languages">Python</h4>
-                        <h4 class="date">Dec, 7, 2021</h4>
+                        <h4 class="date">Feb, 6, 2020</h4>
                     </div>
                 </div>
 
-                <div class="project slide3" id="hide2">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+
+                <div class="project slide3" id="hide2" onclick="location.href='/Projects/unscrambler-article.html'">
+                    <img src="/Assets/thumbnail-unscrambler.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
-                    <h1 class="project-title">Splendor ML</h1>
-                    <p class="project-sample">I created an AI for the game splendor!</p>
+                    <h1 class="project-title">Unscrambler</h1>
+                    <p class="project-sample">I created a terminal based and UI based application that would take in letters and unscramble them for you. This is great to wow others with your "great word skills" :)</p>
     
                     <div class="inline-info">
                         <h4 class="languages">Python</h4>
-                        <h4 class="date">June, 12, 2021</h4>
+                        <h4 class="date">Nov, 30, 2019</h4>
                     </div>
                 </div>
 
-                <div class="project slide3" id="hide">
-                    <img src="/Assets/thumbnail-dlt.PNG" alt="Project Thumbnail" class="project-thumbnail">
+
+                <div class="project slide3" id="hide" onclick="location.href='/Projects/scramble-game-article.html'">
+                    <img src="/Assets/thumbnail-scrambleGame.PNG" alt="Project Thumbnail" class="project-thumbnail">
     
-                    <h1 class="project-title">Math Command</h1>
-                    <p class="project-sample">I made an educational game with unity. Check it out on the app store!</p>
+                    <h1 class="project-title">Scramble Game</h1>
+                    <p class="project-sample">I made an educational game with GUI-Zero that gives the user a word to unscramble. There are many improvments to make to this, like a timer and diffrent difficulties.</p>
     
                     <div class="inline-info">
-                        <h4 class="languages">C#</h4>
-                        <h4 class="date">Aug, 16, 2024</h4>
+                        <h4 class="languages">Python</h4>
+                        <h4 class="date">Dec, 5, 2019</h4>
                     </div>
                 </div>
 
@@ -242,7 +244,7 @@
             </div>
         </div>
 
-        <a href="/ProjectSelector/index.html"><h1 class="btn">See All</h1></a>
+        <a href="/ProjectSelector/project-selector.html"><h1 class="btn">See All</h1></a>
     </div>
 
     <div class="contact" id="contact">
@@ -279,9 +281,9 @@
         <div class="popup">
             <img src="/Assets/InkScapecloseicon.svg" alt="Close" class="closebtn" onclick="closePopup()">
             <h1 class="popup-title">Link Didn't Work?</h1>
-            <p class="popup-text">If the browser did not open up your preffered email service like it was supposed to using the <a href="https://css-tricks.com/all-about-mailto-links/#comments" style="color: greenyellow; border-bottom: 2px solid greenyellow;">MailTo</a> link provided in HTML, either:</p>
+            <p class="popup-text">If the browser did not open up your preferred email service like it was supposed to using the <a href="https://css-tricks.com/all-about-mailto-links/#comments" style="color: greenyellow; border-bottom: 2px solid greenyellow;">MailTo</a> link provided in HTML, either:</p>
             <ul class="options-list">
-                <li>Go to your preffered email service and copy paste your email into a new draft.</li>
+                <li>Go to your preferred email service and copy paste your email into a new draft.</li>
                 <li>Search: "get mailto link to work for" + your desired browser and try pressing send again.</li>
             </ul>
             <h4 class="sorry">Sorry for the inconvience, I know mailto is not the best solution and I am trying to figure out how to set up an SMTP server or other to send emails :(</h4>
@@ -316,9 +318,11 @@
 
         function openNav() {
             document.getElementById("Sidenav").style.width = "250px"
+            document.body.style.overflow = "hidden"
         }
         function closeNav() {
             document.getElementById("Sidenav").style.width = "0"
+            document.body.style.overflow = "initial"
         }
 
         function clearTop() {
@@ -340,14 +344,14 @@
             var GalleryHeight = $('#project-gallery').offset().top
             var ContactHeight = $('#contact').offset().top
 
-            // console.log(userScrollPos > (BackgroundHeight - windowHeight))
+            // console.log(userScrollPos >= 0)
 
-            if (userScrollPos < HomeHeight){
+            if (userScrollPos > (HomeHeight - windowHeight)){
                 clearTop()
                 sideNavLinks[0].className = "active"
                 topNavLinks[0].className = "active"
             }
-            if (userScrollPos > (AboutHeight - windowHeight)){
+            if (userScrollPos > (AboutHeight - windowHeight) + 700){
                 clearTop()
                 sideNavLinks[1].className = "active"
                 topNavLinks[1].className = "active"

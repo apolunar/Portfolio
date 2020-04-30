@@ -163,7 +163,7 @@ html {
     background-image: url(/Assets/coolBackground.png);
     text-align: center;
     width: 100%;
-    height: 95vh;
+    height: 600px;
 
     color: #fff;
     border-bottom: 5px solid white;
@@ -230,17 +230,28 @@ html {
 }
 
 /* ABOUT IMAGES */
-
+/* 
 .section #section-inline .imgs {
-    display: grid;
-}
+    display: in;
+} */
 
 .section #section-inline .imgs .about-image {
-    border: 6px solid #fff;
     width: 400px;
     height: 400px;
     margin: 20px;
+    box-shadow: rgba(73, 73, 73, 0.5) 4px 4px 4px 4px;
+    border-radius: 15px;
 }
+
+/* .section #section-inline .imgs .about-image#img1 {
+    transform: rotate(25deg) translateX(100px);
+} */
+.section #section-inline .imgs .about-image#img2 {
+    transform: scale(1.13) translateY(200px);
+}
+/* .section #section-inline .imgs .about-image#img3 {
+    transform: rotate(-25deg) translateY(-200px) translateX(600px);
+} */
 
 /* BACKGROUND PROGRESS BARS */
 
@@ -356,7 +367,7 @@ html {
 
 .project-gallery .projects .project .project-thumbnail {
     width: 390px;
-    max-height: 300px;
+    height: 230px;
     overflow: hidden;
 }
 
@@ -397,6 +408,7 @@ html {
     color: white;
     background-color: #1d1d1d;
     border-radius: 100px 100px 100px 100px;
+    text-align: center;
 }
 
 .project-gallery .projects .project .inline-info .languages {
@@ -617,6 +629,9 @@ a .btn {
     .project-gallery .projects .inline .project#hide {
         display: none;
     }
+    .section #section-inline .imgs .about-image#img2 {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -657,9 +672,6 @@ a .btn {
     }
     .section #section-inline {
         display: initial;
-    }
-    .section #section-inline .imgs {
-        display: table-row;
     }
     .section #section-inline .imgs .about-image {
         margin: 0 auto;
@@ -709,7 +721,8 @@ a .btn {
     }
     .project-gallery .projects .project-thumbnail {
         max-width: 290px;
-        max-height: 300px;
+        object-fit: cover;
+        object-position: 0% 0;
     }
     .project-gallery .projects .arrow {
         width: 30px;
@@ -717,20 +730,21 @@ a .btn {
         padding: 0;
     }
     .project-gallery .projects .project .project-sample {
-        font-size: 20px;
+        font-size: 14px;
         width: 250px;
     }
     .project-gallery .projects .project .inline-info .date {
-        width: 150px;
+        width: 180px;
         height: 40px;
         font-size: 22px;
-        left: 130px;
+        left: 70px;
     }
     .project-gallery .projects .project .inline-info .languages {
         font-size: 18px;
+        
     }
     .project-gallery .projects .project .inline-info {
-        left: 5px;
+        top: 190px;
     }
     .project-gallery .projects .project .project-title {
         width: 250px;
@@ -741,7 +755,6 @@ a .btn {
     .overlay .popup .popup-title {
         font-size: 43px;
     }
-
     .overlay .popup .options-list li{
         font-size: 20px;
     }
